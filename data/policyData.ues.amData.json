@@ -1,0 +1,6 @@
+[{
+  "subscCats": [
+    "free5gc"
+  ],
+  "ueId": "imsi-$(MCC)$(MNC)$(MSIN)"
+}]

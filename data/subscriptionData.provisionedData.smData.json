@@ -1,0 +1,114 @@
+[
+  {
+    "singleNssai": {
+      "sd": "$(SD)",
+      "sst": $(SST_INT)
+    },
+    "dnnConfigurations": {
+      "$(DNN)": {
+        "pduSessionTypes": {
+          "allowedSessionTypes": ["IPV4"],
+          "defaultSessionType": "IPV4"
+        },
+        "sscModes": {
+          "allowedSscModes": ["SSC_MODE_2", "SSC_MODE_3"],
+          "defaultSscMode": "SSC_MODE_1"
+        },
+        "5gQosProfile": {
+          "5qi": 9,
+          "arp": {
+            "priorityLevel": 8,
+            "preemptCap": "",
+            "preemptVuln": ""
+          },
+          "priorityLevel": 8
+        },
+        "sessionAmbr": {
+          "uplink": "200 Mbps",
+          "downlink": "100 Mbps"
+        }
+      },
+      "$(DNN)2": {
+        "pduSessionTypes": {
+          "defaultSessionType": "IPV4",
+          "allowedSessionTypes": ["IPV4"]
+        },
+        "sscModes": {
+          "defaultSscMode": "SSC_MODE_1",
+          "allowedSscModes": ["SSC_MODE_2", "SSC_MODE_3"]
+        },
+        "5gQosProfile": {
+          "5qi": 9,
+          "arp": {
+            "priorityLevel": 8,
+            "preemptCap": "",
+            "preemptVuln": ""
+          },
+          "priorityLevel": 8
+        },
+        "sessionAmbr": {
+          "uplink": "200 Mbps",
+          "downlink": "100 Mbps"
+        }
+      }
+    },
+    "ueId": "imsi-$(MCC)$(MNC)$(MSIN)",
+    "servingPlmnId": "$(MCC)$(MNC)"
+  },
+  {
+    "singleNssai": {
+      "sd": "$(SD)",
+      "sst": $(SST_INT)
+    },
+    "dnnConfigurations": {
+      "$(DNN)": {
+        "sessionAmbr": {
+          "uplink": "200 Mbps",
+          "downlink": "100 Mbps"
+        },
+        "pduSessionTypes": {
+          "defaultSessionType": "IPV4",
+          "allowedSessionTypes": ["IPV4"]
+        },
+        "sscModes": {
+          "defaultSscMode": "SSC_MODE_1",
+          "allowedSscModes": ["SSC_MODE_2", "SSC_MODE_3"]
+        },
+        "5gQosProfile": {
+          "5qi": 9,
+          "arp": {
+            "priorityLevel": 8,
+            "preemptCap": "",
+            "preemptVuln": ""
+          },
+          "priorityLevel": 8
+        }
+      },
+      "$(DNN)2": {
+        "sessionAmbr": {
+          "uplink": "200 Mbps",
+          "downlink": "100 Mbps"
+        },
+        "pduSessionTypes": {
+          "defaultSessionType": "IPV4",
+          "allowedSessionTypes": ["IPV4"]
+        },
+        "sscModes": {
+          "defaultSscMode": "SSC_MODE_1",
+          "allowedSscModes": ["SSC_MODE_2", "SSC_MODE_3"]
+        },
+        "5gQosProfile": {
+          "arp": {
+            "priorityLevel": 8,
+            "preemptCap": "",
+            "preemptVuln": ""
+          },
+          "priorityLevel": 8,
+          "5qi": 9
+        }
+      }
+    },
+    "ueId": "imsi-$(MCC)$(MNC)$(MSIN)",
+    "servingPlmnId": "$(MCC)$(MNC)"
+  }
+]

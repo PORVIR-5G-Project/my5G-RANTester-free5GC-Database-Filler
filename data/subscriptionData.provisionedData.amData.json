@@ -1,0 +1,23 @@
+[
+  {
+    "ueId": "imsi-$(MCC)$(MNC)$(MSIN)",
+    "servingPlmnId": "$(MCC)$(MNC)",
+    "gpsis": ["msisdn-0900000000"],
+    "subscribedUeAmbr": {
+      "uplink": "1 Gbps",
+      "downlink": "2 Gbps"
+    },
+    "nssai": {
+      "defaultSingleNssais": [
+        {
+          "sst": $(SST_INT),
+          "sd": "$(SD)"
+        },
+        {
+          "sst": $(SST_INT),
+          "sd": "$(SD)"
+        }
+      ]
+    }
+  }
+]

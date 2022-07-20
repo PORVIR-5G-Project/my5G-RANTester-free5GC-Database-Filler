@@ -1,0 +1,30 @@
+{
+  "host": "mongodb:27017",
+  "database": "free5gc",
+  "collections": [
+    {
+      "collection": "policyData.ues.amData",
+      "filename": "policyData.ues.amData.json"
+    },
+    {
+      "collection": "policyData.ues.smData",
+      "filename": "policyData.ues.smData.json"
+    },
+    {
+      "collection": "subscriptionData.authenticationData.authenticationSubscription",
+      "filename": "subscriptionData.authenticationData.authenticationSubscription.json"
+    },
+    {
+      "collection": "subscriptionData.provisionedData.amData",
+      "filename": "subscriptionData.provisionedData.amData.json"
+    },
+    {
+      "collection": "subscriptionData.provisionedData.smData",
+      "filename": "subscriptionData.provisionedData.smData.json"
+    },
+    {
+      "collection": "subscriptionData.provisionedData.smfSelectionSubscriptionData",
+      "filename": "subscriptionData.provisionedData.smfSelectionSubscriptionData.json"
+    }
+  ]
+}

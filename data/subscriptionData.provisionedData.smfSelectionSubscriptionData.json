@@ -1,0 +1,16 @@
+[{
+  "ueId": "imsi-$(MCC)$(MNC)$(MSIN)",
+  "servingPlmnId": "$(MCC)$(MNC)",
+  "subscribedSnssaiInfos": {
+    "$(SST)$(SD)": {
+      "dnnInfos": [
+        {
+          "dnn": "$(DNN)"
+        },
+        {
+          "dnn": "$(DNN)2"
+        }
+      ]
+    }
+  }
+}]

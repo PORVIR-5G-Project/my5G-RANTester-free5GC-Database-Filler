@@ -1,0 +1,21 @@
+[
+  {
+    "smPolicySnssaiData": {
+      "$(SST)$(SD)": {
+        "snssai": {
+          "sst": $(SST_INT),
+          "sd": "$(SD)"
+        },
+        "smPolicyDnnData": {
+          "$(DNN)2": {
+            "dnn": "$(DNN)2"
+          },
+          "$(DNN)": {
+            "dnn": "$(DNN)"
+          }
+        }
+      }
+    },
+    "ueId": "imsi-$(MCC)$(MNC)$(MSIN)"
+  }
+]
