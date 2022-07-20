@@ -1,0 +1,16 @@
+version: "3"
+services:
+  db-filler:
+    build:
+      context: ./
+    volumes:
+      - ./data:/app/data
+    environment:
+      - NUM_DEVICES=${NUM_DEVICES}
+    networks:
+      default:
+
+networks:
+  default:
+    external:
+      name: "free5gc-docker-v306_default"

@@ -6,7 +6,7 @@ const yaml = require("yaml");
 const database = require("./database");
 
 // Get environment variables
-const NUM_DEVICES = process.env.NUM_DEVICES || 1;
+const NUM_DEVICES = process.env.NUM_DEVICES ? parseInt(process.env.NUM_DEVICES) : 1;
 
 // Import data JSON file with database information
 const data = require("./data/database.json");
