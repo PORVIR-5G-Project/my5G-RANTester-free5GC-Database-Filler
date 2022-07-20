@@ -1,6 +1,7 @@
 version: "3"
 services:
   db-filler:
+    container_name: my5grantester-db-filler
     build:
       context: ./
     volumes:
