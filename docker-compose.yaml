@@ -1,9 +1,9 @@
 version: "3"
 services:
   db-filler:
-    container_name: my5grantester-db-filler
+    container_name: my5grantester-free5gc-db-filler
     build:
-      context: ./
+      context: ./my5G-RANTester-Database-Filler/
     volumes:
       - ./data:/app/data
     environment:

@@ -1,0 +1,3 @@
+[submodule "my5G-RANTester-Database-Filler"]
+	path = my5G-RANTester-Database-Filler
+	url = https://github.com/gabriel-lando/my5G-RANTester-Database-Filler.git
