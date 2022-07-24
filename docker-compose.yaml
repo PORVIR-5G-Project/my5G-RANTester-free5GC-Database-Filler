@@ -14,4 +14,4 @@ services:
 networks:
   default:
     external:
-      name: "free5gc-docker-v306_default"
+      name: "free5gc-compose_privnet"
